@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(5, 5, 22);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    color: whitesmoke;
+}
+
+nav .logo{
+    flex: 2;
+}
+nav .logo h1{
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.menu{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+}
+
+
+.menu span{
+    background-color: rgb(5, 5, 22);
+    color: #DD9870;
+    padding: 12px;
+    border: 2px solid #DD9870;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+main section{
+    width: 85%;
+    padding: 30px;
+}
+
+main .showcase{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase .left{
+    width: 100%;
+    position: relative;
+}
+
+.showcase .left-content h1, p, button, socials{
+    margin-bottom: 28px;
+}
+
+.showcase .left h1{
+    font-size: 60px;
+    color: whitesmoke;
+}
+.showcase .left h1 span{
+    color: #DD9870;
+}
+
+.showcase .left p{
+    color: rgb(136, 136, 136);
+    line-height: 30px;
+}
+.showcase .left button{
+    padding: 25px;
+    border: none;
+    color:rgb(5, 5, 22);
+    font-weight: bold;
+    background: #DD9870;
+
+}
+
+
+.showcase .right{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.showcase .right img{
+    width: 50%;
+    height: 60%;
+    box-shadow: 22px 24px 5px 0px rgb(58, 57, 57);
+}
+
+
+.about h1{
+    color: whitesmoke;
+    border-bottom: 5px solid #DD9870;
+    padding-bottom: 9px;
+    width: 13%;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.about-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-content{
+    background: rgb(6, 6, 31);
+    padding: 30px;
+    border-radius: 20px;
+}
+.about-wrapper img{
+    width: 50%;
+    box-shadow: -30px 24px 5px 0px rgb(58, 57, 57);
+}
+.about-wrapper p{
+    color: rgb(136, 136, 136);
+    line-height: 30px;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.skills .skill-icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    padding: 20px;
+    flex: 1;
+}
+
+.skills .lists-of-skills{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    flex: 1;
+}
+.skills .lists-of-skills span{
+    margin: 8px;
+    background-color: #f5bfa0d3;
+    border-radius: 20px;
+    border: 2px solid #DD9870;
+    color: rgb(6, 6, 31);
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+footer{
+    width: 100%;
+    padding: 30px;
+    background-color:rgb(6, 6, 31);
+    text-align: center;
+    color: whitesmoke;
+}
+
+.circle{
+    padding: 200px;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -999;
+    overflow: hidden;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 768px){
+    header nav{
+        padding: 10px;
+        width: 90%;
+    }
+    
+    main .showcase{
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .showcase .left h1{
+        font-size: 30px;
+    }
+    main .showcase .left p{
+        font-size: 15px;
+    }
+    main .showcase .right img{
+        display: none;
+    }
+
+    .about{
+        width: 90%;
+        padding: 12px;
+    }
+    .about h1{
+        width: 50%;
+    }
+    .about .about-wrapper{
+        flex-direction: column;
+    }
+    .about-content{
+        padding: 20px;
+    }
+    .about-content .me{
+        width: 20%;
+    }
+    .about-content p{
+        font-size: 15px;
+    }
+
+
+    .skills{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    
+
+    footer{
+        font-size: 14px;
+    }
+}
