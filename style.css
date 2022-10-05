@@ -106,8 +106,8 @@ main .showcase{
     
 }
 .showcase .right img{
-    width: 50%;
-    height: 60%;
+    width: 400px;
+    height: 400px;
     box-shadow: 22px 24px 5px 0px rgb(58, 57, 57);
 }
 
@@ -134,7 +134,7 @@ main .showcase{
     border-radius: 20px;
 }
 .about-wrapper img{
-    width: 50%;
+    width: 400px;
     box-shadow: -30px 24px 5px 0px rgb(58, 57, 57);
 }
 .about-wrapper p{
