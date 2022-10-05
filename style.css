@@ -175,6 +175,98 @@ main .showcase{
 }
 
 
+.projects{
+    width: 85%;
+    margin-top: 20px;
+}
+.projects h1{
+    color: white;
+    width: 10%;
+    padding-bottom: 8px;
+    border-bottom: 5px solid #DD9870;
+}
+.projects .project-wrapper{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.project{
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    transition: .9s ease-in-out;
+    position: relative;
+    width: 350px;
+    cursor: pointer;
+}
+.project img{
+    width: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: .9s ease-in-out;
+    overflow: hidden;
+}
+.project:hover{
+    transform: scale(0.9);
+}
+
+.project .project-footer{
+    color: white;
+    padding: 12px;
+    line-height: 30px;
+}
+.project .project-footer span{
+    background-color: #DD9870;
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.project a{
+    text-decoration: none;
+}
+.project .link-wrapper{
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: auto auto;
+
+}
+.project .link-wrapper img{
+    width: 25%;
+}
+
+
+.contact{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.contact h1{
+    color: white;
+    width: 10%;
+    font-size: 25px;
+    padding-bottom: 8px;
+    border-bottom: 5px solid #DD9870;
+}
+.contact .contact-wrapper{
+    margin-top: 15px;
+    background: rgb(6, 6, 31);
+    padding: 30px;
+    border-radius: 20px;
+    color: lightgray;
+    line-height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
 
 footer{
     width: 100%;
@@ -220,6 +312,9 @@ footer{
         width: 90%;
         padding: 12px;
     }
+    .about img{
+        width: 80%;
+    }
     .about h1{
         width: 50%;
     }
@@ -240,6 +335,22 @@ footer{
     .skills{
         flex-direction: column-reverse;
         width: 100%;
+    }
+
+    .projects .project-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .project{
+        width: 300px;
+    }
+    .project img{
+        width: 300px;
+    }
+
+    .contact .contact-wrapper{
+        font-size: 	15px;
+        line-height: 30px;
     }
     
 
