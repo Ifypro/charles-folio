@@ -187,8 +187,8 @@ main .showcase{
 }
 .projects .project-wrapper{
     margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
     gap: 12px;
 }
 
@@ -201,6 +201,12 @@ main .showcase{
     position: relative;
     width: 350px;
     cursor: pointer;
+    position: relative;
+}
+.project .github{
+    position: absolute;
+    top: 5px;
+    right: -80px;
 }
 .project img{
     width: 350px;
@@ -239,7 +245,10 @@ main .showcase{
 .project .link-wrapper img{
     width: 25%;
 }
-
+.project .link-wrapper a{
+    text-decoration: none;
+    color: whitesmoke;
+}
 
 .contact{
     width: 80%;
@@ -334,11 +343,18 @@ footer{
 
     .skills{
         flex-direction: column-reverse;
-        width: 100%;
+        
+        gap: 20px;
+        padding: 0;
     }
-
+    .skills .lists-of-skills{
+        padding: 12px;
+    }
+    .projects{
+        padding: 0;
+    }
     .projects .project-wrapper{
-        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: wrap;
         justify-content: center;
     }
     .project{
